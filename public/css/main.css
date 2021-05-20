@@ -1,0 +1,211 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 4 мая 2021 г., 10:43:45
+    Author     : ackng
+*/
+:root {
+    background:#2A013D;  /*#1b1b1b*/
+    color:#eaeaea;
+    border: #F2F7FE;
+}
+@media (prefer-color-scheme: dark){
+    :root{
+    background:#fff;
+    color:#000;
+    border: #444444;
+    }
+}
+
+   @media screen and (max-width: 499px) {
+    html  {width: 450px;}
+    
+   }      
+
+   @media screen and (min-width: 500px) and (max-width: 767px) {
+    html  {width: 500px;}
+    
+   }      
+   @media screen and (min-width: 768px) and (max-width: 991px) {
+    html  {width: 768px;}
+   }
+   @media screen and (min-width: 992px) and (max-width: 1199px) {
+   html  {width: 990px;}    
+   }
+   @media screen and (min-width: 1200px) {
+   html {width: 800px;}
+   }
+   
+   ﻿article, aside, figure, figcaption, footer, header, hgroup, nav, section, summary {   
+       display: block;   
+   }
+   
+   html{
+       margin: auto;
+       
+   }
+   body{
+       /*margin: auto;*/
+       /*padding: 4px;*/
+       border: 3px #eaeaea solid;
+   }
+   p {
+       padding: 0px 8px;
+       margin: 0px;
+   }
+   div {
+       background: #333333;
+       /*border: 4px #a2a2a2 double;*/
+   }   
+   
+   .section_header {
+        padding: 3px 6px 3px 6px;
+        background-color: #B165D4;
+        color: #F7FE00;
+        font-weight: bold;
+        font-size: 112%;
+        text-align: center;
+        margin-bottom: 6px;
+        padding: 5px 0px;
+        /*border: 1px #000 solid;*/        
+    }
+ form{
+    padding: 5px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    border: 1px #e3e3e3 solid;
+    /*background-image: url(https://kidwelcome.ru/userfiles/images/916583.jpg);*/ 
+}
+
+input{
+    margin: 5px 0px 50px;
+    padding: 3px;
+    border: unset;
+    border-bottom: 2px solid #e3e3e3;
+    outline: none;
+} 
+    
+   header{
+       text-align: center;
+/*       background: lightgrey;
+       color: #000;*/
+       background: #8409BE;
+       color: #DEE418;
+       border: 1px #000 solid;
+       /*position: relative;*/
+       /*display: table;*/
+       font-size: 10pt;
+       /*width: 80%;*/
+       padding-top: 10px;
+       padding-bottom: 5px;       
+   }
+   .Header {
+       border: black double;
+       font-size: 10pt;
+       font-family: Arial, Helvetica, sans-serif;
+       margin: 1px;
+   }
+
+   .Content{
+       border: black dashed;
+       text-align: justify;
+       font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+       /*background-color: white;*/
+   }
+   .Highlighting{
+ font-family: "Comic Sans MS", "Comic Sans", cursive;/*Arial, Helvetica, sans-serif;*/       
+   }
+   table{
+       background: #8C7BC1;
+       color: #000;
+       font: "Times New Roman";
+       border: 1.5px #F2F7FE ridge;
+       width: 100%;      
+       /*Промежуток между ячейками*/
+       /*border-collapse: separate;*/
+       border-spacing: 0px 3px;
+       
+       
+   }
+tr:hover td {
+  background: #ccddff;
+  color: #4264A6;
+}
+   caption{
+       /*caption-side: bottom;*/
+       caption-side: top;
+       color: #eaeaea;
+       /*align-content: right;*/
+   }
+   .tbs1{
+       background: #BFA730;
+       color: #412C84	;
+       /*border-radius: 20px;*/
+       padding-left: 15px;
+       margin-left: 5px;
+/*       background: #6E0069;
+       color: #409300	;*/
+   }
+   .tbs2{
+       background: #412C84;
+       color: #BFA730;
+       /*border-radius: 20px;*/
+       padding-left: 15px;
+       margin-left: 5px;
+   }
+   
+   .my_btn{
+       border: 1px #D4D900 none;
+       border-radius: 5px;
+       margin: 15px;
+       padding: 5px;
+       background-color: #F7FE00;
+   }
+   
+   footer{
+       border: 1px black dotted;
+       background: #7006A2;
+       color: #D4D900;
+       text-align: right;
+       margin: 1px;
+       padding: 6px;
+       padding-right: 14px;
+   }
+@media (max-width: 480px) {
+    html  {width: 400px;}
+    article {
+/*        float: none;
+        width: auto;*/
+    }
+
+    aside {
+/*        position: static;
+        float: none;
+        background: pink;
+        margin-left: 5px;*/
+    }
+}
+
+/*
+Чтобы сделать вложенную нумерацию, нужно использовать следующие свойства:
+◦counter-reset сбрасывает один или несколько счётчиков, задавая значение для сброса;
+◦counter-increment задаёт значение приращения счётчика, т.е. с каким шагом будет нумероваться каждый последующий пункт;
+◦content — генерируемое содержимое, в данном случае отвечает за вывод номера перед каждым пунктом списка.*/
+
+ol {
+   /* убираем стандартную нумерацию */
+   list-style: none;
+   /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
+   counter-reset: li;
+}
+li:before {
+   /* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+   counter-increment: li;
+   /* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+   content: counters(li, ".") ". ";
+}
